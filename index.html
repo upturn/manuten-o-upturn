@@ -11,6 +11,7 @@
 <meta name="author" content="Nilton Costa e Silva, Gabriel Furlan, Cleverson Lira" />
 <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 <meta name="viewport" content="width=device-width initial-scale=1">
+<meta http-equiv="pragma" content="no-cache" />
 
 <!-- Script -->
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -46,7 +47,7 @@
 		<p><h5>Para maiores informações deixe seu e-mail, retornaremos com nossas informações.</h5></p>
 		<form action="php/email.php" method="post">
 			<input type="hidden" name="token-email" value="e20d796040328bc18568bb7ea04ed757">
-			<input type="text" name="email" id="email" placeholder="Digite seu email..."/>
+			<input type="text" name="email" id="email" placeholder="Digite seu email..." required>
 			<button type="submit" name="enviar-email">Entrar</button>
 		</form>
 	</section>

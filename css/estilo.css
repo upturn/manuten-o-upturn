@@ -68,9 +68,6 @@ html, body{
 
 }
 
-header {
-	position: relative;
-}
 
 header > h1 {
 	box-sizing: border-box;
@@ -156,17 +153,19 @@ form input, form button{
 }
 
 form input{
-	width:70%;
+	width:75%;
+	max-width: 420px;
 	margin-right: -1%;
 	padding: 10px;
 	color: #000000;
 }
 
 form button{
-	width: 30%;
+	width: 25%;
 	background-color: #C7555A;
 	color: #FFFFFF;
 }
+
 @media screen and (max-width: 1024px){
 		form input{
 			margin-right: 0;
