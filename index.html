@@ -2,13 +2,15 @@
 <html lang="pt-br">
 <head>
 
-
+<title>Upturn - Design e desenvolvimento web</title>
+	
 <meta charset="utf-8">
 <meta name="language" content="pt-br" />
 <meta name="description" content="upturn.com.br - Empresa de designer e desenvolvimento web. Criamos sites, portifolios, sitemas e lojas virtuais. " />
 <meta name="keywords" content="upturn, desenvolvimento web, web design, freelancer">
 <meta name="author" content="Nilton Costa e Silva, Gabriel Furlan, Cleverson Lira" />
-<title>Upturn - Design e desenvolvimento web</title>
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<meta name="viewport" content="width=device-width initial-scale=1">
 
 <!-- Script -->
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -42,9 +44,10 @@
 				
 		</section>
 		<p><h5>Para maiores informações deixe seu e-mail, retornaremos com nossas informações.</h5></p>
-		<form action="#">
+		<form action="php/email.php" method="post">
+			<input type="hidden" name="token-email" value="e20d796040328bc18568bb7ea04ed757">
 			<input type="text" name="email" id="email" placeholder="Digite seu email..."/>
-			<button type="submit">Entrar</button>
+			<button type="submit" name="enviar-email">Entrar</button>
 		</form>
 	</section>
 </body>
