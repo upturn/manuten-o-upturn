@@ -15,7 +15,7 @@
 
 <!-- Script -->
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js" async></script>
 
 <!-- Estilos -->
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 	<section id="container">
-		<header class="cabecalho f"><!-- Inicio:  CABEÇALHO -->
+		<header class="cabecalho"><!-- Inicio:  CABEÇALHO -->
 			<h1><img src="img/engrenagem.png" alt="Site em Construção.">SITE EM CONSTRUÇÃO</h1>
 			<p><h5>Estamos preparando o nosso site. Em breve novidades :)<h5><p/>
 		</header><!-- Fim: CABEÇALHO -->
@@ -47,7 +47,7 @@
 		<p><h5>Para maiores informações deixe seu e-mail, retornaremos com nossas informações.</h5></p>
 		<form action="php/email.php" method="post">
 			<input type="hidden" name="token-email" value="e20d796040328bc18568bb7ea04ed757">
-			<input type="text" name="email" id="email" placeholder="Digite seu email..." required>
+			<input type="email" name="email" id="email" placeholder="Digite seu email..." required>
 			<button type="submit" name="enviar-email">Entrar</button>
 		</form>
 	</section>
