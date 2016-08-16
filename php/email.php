@@ -1,5 +1,7 @@
 <?php
 
+	header('Content-type: text/html; charset=UTF-8');
+
 	require "mailer/PHPMailerAutoload.php";
 
 	$token = 'e20d796040328bc18568bb7ea04ed757';
@@ -15,7 +17,7 @@
 		$mailer->IsSMTP();
 
 		//UTF-8
-		$mailer->Charset = "UTF-8";
+		$mailer->CharSet = "UTF-8";
 
 		//Configuração
 		$mailer->SMTPAuth = true;
@@ -35,10 +37,10 @@
 		$mailer->FromName = "UPTURN";
 		$mailer->addReplyTo("contato@upturn.com.br", "UPTURN");
 
-		$mailer->Subject = "UPTURN";
-		
+		$mailer->Subject = "UPTURN | Desenvolvimento Web e Mobile";
+				
 		//Corpo do email
-		$mailer->Body = "Olá, tude bem?";
+		$mailer->Body = "Olá, tudo bem?";
 		$mailer->Body .= "<br>";
 		$mailer->Body .= "<br>";
 		$mailer->Body .= "Somos a UPTURN, uma empresa de design e desenvolvimento web que tem como maior objetivo criar a melhor solução online para você.";
@@ -47,7 +49,7 @@
 		$mailer->Body .= "Informe a sua necessidade e entraremos em contato o mais breve possível.";
 		$mailer->Body .= "<br>";
 		$mailer->Body .= "<br>";
-		$mailer->Body .= "Equipe UPTURN agradece.";
+		$mailer->Body .= "Equipe UPTURN agradece.";				
 
 
 		$mailer->AddAddress($destinatario);
